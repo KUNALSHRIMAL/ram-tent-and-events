@@ -2,11 +2,11 @@ import { useEffect, useRef, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const videos = [
-  "/videos/1v.mp4",
-  "/videos/2v.mp4",
-  "/videos/3v.mp4",
-  "/videos/4v.mp4",
-];
+  "1v.mp4",
+  "2v.mp4",
+  "3v.mp4",
+  "4v.mp4",
+].map(video => `${import.meta.env.BASE_URL}videos/${video}`);
 
 export default function VideoSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);

@@ -13,7 +13,7 @@ export default function Header() {
         <h1 className="text-2xl font-bold text-white flex items-center gap-2">
           <a href="#" className="flex items-center gap-2">
             <img
-              src="/images/logo.jpg" // 🔁 Replace this with your actual logo path
+              src={`${import.meta.env.BASE_URL}images/logo.jpg`} // 🔁 Replace this with your actual logo path
               alt="Ram Tent and Events Logo"
               className="h-8 w-8 object-contain"
             />

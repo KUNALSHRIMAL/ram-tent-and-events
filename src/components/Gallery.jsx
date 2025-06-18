@@ -2,12 +2,12 @@ import { useState } from "react";
 import { FaImages } from "react-icons/fa";
 
 const images = [
-  "/images/1.jpg", "/images/2.jpg", "/images/3.jpg", "/images/4.jpg", "/images/5.jpg",
-  "/images/6.jpg", "/images/7.jpg", "/images/8.jpg", "/images/9.jpg", "/images/10.jpg",
-  "/images/11.jpg", "/images/12.jpg", "/images/13.jpg", "/images/14.jpg", "/images/15.jpg",
-  "/images/16.jpg", "/images/17.jpg", "/images/18.jpg", "/images/19.jpg", "/images/20.jpg",
-  "/images/21.jpg",
-];
+  "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg",
+  "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg",
+  "11.jpg", "12.jpg", "13.jpg", "14.jpg", "15.jpg",
+  "16.jpg", "17.jpg", "18.jpg", "19.jpg", "20.jpg",
+  "21.jpg",
+].map(img => `${import.meta.env.BASE_URL}images/${img}`);
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);

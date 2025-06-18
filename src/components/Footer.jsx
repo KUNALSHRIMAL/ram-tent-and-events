@@ -17,7 +17,7 @@ export default function Footer() {
         {/* Left Section with logo */}
         <div className="flex-1 flex flex-col justify-center items-center md:items-start text-center md:text-left max-w-xs">
           <img
-            src="/images/logo.jpg" // 🔁 Replace with your actual logo path
+            src={`${import.meta.env.BASE_URL}images/logo.jpg`} // ✅ Works with GitHub Pages subpath
             alt="Ram Tent and Events Logo"
             className="h-12 w-12 object-contain mb-3"
           />
