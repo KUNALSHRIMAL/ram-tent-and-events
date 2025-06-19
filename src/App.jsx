@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import VideoSlider from "./components/VideoSlider";
+import Catalog from "./components/Catalog";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -34,9 +35,10 @@ function App() {
   return (
     <>
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <main className="pt-20 bg-white dark:bg-gray-900 transition-colors duration-500">
+      <main className="pt-8 bg-white dark:bg-gray-900 transition-colors duration-500">
         <Hero />
         <About />
+        <Catalog/>
         <Gallery />
         <VideoSlider />
         <Services />

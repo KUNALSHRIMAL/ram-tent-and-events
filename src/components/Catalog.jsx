@@ -2,15 +2,11 @@ import { useState } from "react";
 import { FaImages } from "react-icons/fa";
 
 const images = [
-  "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg",
-  "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg",
-  "11.jpg", "12.jpg", "13.jpg", "14.jpg", "15.jpg",
-  "16.jpg", "17.jpg", "18.jpg", "19.jpg", "20.jpg",
-  "21.jpg", "22.jpg", "23.jpg", "24.jpg", "25.jpg",
-  "26.jpg", "27.jpg", "28.jpg",
+  "1c.jpg", "2c.jpg", "3c.jpg", "4c.jpg", "5c.jpg",
+  "6c.jpg", "7c.jpg", "8c.jpg", "9c.jpg", "10c.jpg",
 ].map(img => `${import.meta.env.BASE_URL}images/${img}`);
 
-export default function Gallery() {
+export default function Catalog() {
   const [selectedImage, setSelectedImage] = useState(null);
   const [visibleCount, setVisibleCount] = useState(5);
 
@@ -23,9 +19,12 @@ export default function Gallery() {
 
   return (
     <section id="gallery" className="py-12 px-4 bg-white dark:bg-gray-900 transition-colors">
+      <h3 className="text-4xl font-extrabold text-pink-600 dark:text-pink-400 text-center mb-4">
+        Our Work
+      </h3>
 
       <h4 className="text-2xl font-semibold text-center text-pink-500 dark:text-pink-600 mb-8">
-        Our Images
+        Our Catalog
       </h4>
 
       <div className="max-w-6xl mx-auto">
